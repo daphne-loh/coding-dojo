@@ -1,4 +1,4 @@
-const answer = () => {
+const persistantBugger = () => {
 	throw 'No solution provided!';
 }
-export default answer;
+export default persistantBugger;

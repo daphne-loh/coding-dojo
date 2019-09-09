@@ -1,11 +1,12 @@
-import answer from '../index';
+import persistantBugger from '../index';
 
 describe('Code kata', () => {
-	it('should start writing your own test', () => {
-		const hasStartedUpdatingTest = false;
-		expect(hasStartedUpdatingTest).toEqual(true);
+	it('should return the number', () => {
+		expect(persistantBugger(39)).toEqual(3);
+		expect(persistantBugger(4)).toEqual(3);
+		expect(persistantBugger(25)).toEqual(3);
+		expect(persistantBugger(999)).toEqual(3);
   });
-  it('should have an answer', () => {
-		expect(() => answer()).not.toThrow(new Error('No solution provided!'));
-	});
 });
+
+
